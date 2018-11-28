@@ -17,7 +17,6 @@ pipeline {
       agent {
           docker { 
 	     image 'node:latest'
-	     customWorkspace "$JENKINS_HOME/workspace/$BUILD_TAG"
 	  }
       }
       steps{
